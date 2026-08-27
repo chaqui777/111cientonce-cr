@@ -1,0 +1,22 @@
+.button {
+  position: fixed;
+  right: var(--space-4);
+  bottom: var(--space-4);
+  z-index: var(--z-cart-button);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  background: var(--color-red);
+  color: #fff;
+  border: none;
+  padding: var(--space-3) var(--space-4);
+  border-radius: 999px;
+  font-size: 1.1rem;
+  box-shadow: var(--shadow-md);
+  transition: background var(--transition-fast), transform var(--transition-fast);
+}
+
+.button:hover {
+  background: var(--color-red-dark);
+  transform: translateY(-1px);
+}

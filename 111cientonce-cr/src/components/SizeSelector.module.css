@@ -1,0 +1,38 @@
+.label {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  color: var(--color-text-on-light-muted);
+  margin-bottom: var(--space-2);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.chip {
+  border: 1px solid var(--color-border-on-light);
+  background: #fff;
+  color: var(--color-text-on-light);
+  font-size: 0.8rem;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  min-width: 40px;
+}
+
+.chip:hover {
+  border-color: var(--color-asphalt);
+}
+
+.chipActive {
+  background: var(--color-asphalt);
+  border-color: var(--color-asphalt);
+  color: var(--color-text-on-dark);
+}
+
+.error {
+  color: var(--color-red);
+  font-size: 0.75rem;
+  margin-top: var(--space-2);
+}

@@ -1,0 +1,37 @@
+.banner {
+  background: var(--color-asphalt);
+  color: var(--color-text-on-dark);
+  padding-block: var(--space-7);
+  text-align: center;
+  margin-top: var(--space-6);
+}
+
+.title {
+  font-size: clamp(1.5rem, 5vw, 2.2rem);
+  color: var(--color-text-on-dark);
+}
+
+.text {
+  margin-top: var(--space-3);
+  color: var(--color-text-on-dark-muted);
+  max-width: 40ch;
+  margin-inline: auto;
+}
+
+.cta {
+  display: inline-flex;
+  margin-top: var(--space-5);
+  background: var(--color-yellow);
+  color: var(--color-asphalt);
+  text-decoration: none;
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+}
+
+.cta:hover {
+  background: var(--color-yellow-dark);
+}

@@ -1,0 +1,139 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-header);
+  background: var(--color-asphalt);
+  border-bottom: 1px solid var(--color-border-on-dark);
+}
+
+.inner {
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  text-decoration: none;
+  color: var(--color-text-on-dark);
+}
+
+.brandName {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.15rem;
+  letter-spacing: 0.02em;
+}
+
+.brandTag {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.22em;
+  color: var(--color-yellow);
+  margin-top: 2px;
+}
+
+.nav {
+  display: none;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.cartButton {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  background: transparent;
+  border: 1px solid var(--color-border-on-dark);
+  color: var(--color-text-on-dark);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  transition: border-color var(--transition-fast), background var(--transition-fast);
+}
+
+.cartButton:hover {
+  border-color: var(--color-yellow);
+}
+
+.cartCount {
+  font-size: 0.8rem;
+  min-width: 1ch;
+}
+
+.menuToggle {
+  background: transparent;
+  border: 1px solid var(--color-border-on-dark);
+  color: var(--color-text-on-dark);
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navOpen {
+  display: flex;
+  position: absolute;
+  top: var(--header-height);
+  left: 0;
+  right: 0;
+  flex-direction: column;
+  background: var(--color-asphalt);
+  border-bottom: 1px solid var(--color-border-on-dark);
+  padding: var(--space-2) var(--space-4) var(--space-4);
+}
+
+.navLink {
+  color: var(--color-text-on-dark);
+  text-decoration: none;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--color-border-on-dark);
+}
+
+.navLink:last-child {
+  border-bottom: none;
+}
+
+.navLink:hover {
+  color: var(--color-yellow);
+}
+
+@media (min-width: 768px) {
+  .menuToggle {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    gap: var(--space-5);
+  }
+
+  .navOpen {
+    position: static;
+    flex-direction: row;
+    background: transparent;
+    border: none;
+    padding: 0;
+    display: flex;
+  }
+
+  .navLink {
+    border-bottom: none;
+    padding: 0;
+  }
+}

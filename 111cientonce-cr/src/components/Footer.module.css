@@ -1,0 +1,87 @@
+.footer {
+  margin-top: auto;
+  background: var(--color-asphalt);
+  color: var(--color-text-on-dark);
+  padding-block: var(--space-7) var(--space-5);
+  border-top: 4px solid var(--color-red);
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.brandName {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.3rem;
+  letter-spacing: 0.02em;
+}
+
+.brandTag {
+  color: var(--color-yellow);
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  margin-top: var(--space-1);
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+.categoryItem {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  color: var(--color-text-on-dark-muted);
+  text-transform: uppercase;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.contactLabel {
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  color: var(--color-text-on-dark-muted);
+}
+
+.contactLink {
+  color: var(--color-text-on-dark);
+  text-decoration: none;
+  font-family: var(--font-mono);
+  font-size: 1.05rem;
+  width: fit-content;
+  border-bottom: 1px solid var(--color-border-on-dark);
+}
+
+.contactLink:hover {
+  color: var(--color-yellow);
+  border-color: var(--color-yellow);
+}
+
+.bottom {
+  margin-top: var(--space-6);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border-on-dark);
+}
+
+.copy {
+  color: var(--color-text-on-dark-muted);
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+}
+
+@media (min-width: 768px) {
+  .inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}

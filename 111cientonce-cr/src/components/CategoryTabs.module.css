@@ -1,0 +1,55 @@
+.wrapper {
+  position: sticky;
+  top: var(--header-height);
+  z-index: 40;
+  background: var(--color-bone);
+  border-bottom: 1px solid var(--color-border-on-light);
+  padding-block: var(--space-3);
+}
+
+.scroller {
+  display: flex;
+  gap: var(--space-2);
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 0 var(--space-4);
+  margin: 0 calc(var(--space-4) * -1);
+}
+
+.scroller::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .scroller {
+    padding: 0;
+    margin: 0;
+    overflow-x: visible;
+    flex-wrap: wrap;
+  }
+}
+
+.tab {
+  flex: 0 0 auto;
+  background: transparent;
+  border: 1px solid var(--color-border-on-light);
+  color: var(--color-text-on-light-muted);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+  transition: background var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.tab:hover {
+  border-color: var(--color-asphalt);
+  color: var(--color-asphalt);
+}
+
+.tabActive {
+  background: var(--color-asphalt);
+  border-color: var(--color-asphalt);
+  color: var(--color-text-on-dark);
+}
